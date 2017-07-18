@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>DRIVY CAR SELECTION</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="application.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+
+      $(function() {
+        var cars = [];
+        var url = "cars.json";
+        $.ajax({
+          url: url,
+          dataType: 'JSON',
+          type: 'GET',
+          success: function (data) {
+            var data = JSON.parse(data)
+            console.log(data);
+          }
+        });
+      });
+    </script>
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1 class="title blue">Car rental</h1>
+      <div class="container">
+        <div class="row">
+          <div class="side-panel col-lg-2">
+            <div class="form grey-border grey-background">
+              <div class="form-group">
+                <label class="form-title">Energy</label>
+                <select class="form-control">
+                  <option>All</option>
+                  <option>Diesel</option>
+                  <option>Electric</option>
+                  <option>Hybrid</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-title">Equipment</label>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" value="gps">
+                      GPS
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" value="air_conditioning">
+                      Air conditioning
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" value="audio_input">
+                      Audio input
+                  </label>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="content-panel col-lg-10">SIDE PANEL GOES HERE</div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

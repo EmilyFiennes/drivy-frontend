@@ -1,0 +1,99 @@
+{
+  cars: [
+    {
+      id: 1,
+      title: "Megane Jumpy Coupe Multispace 500",
+      energy: "diesel",
+      equipments: [
+        "gps",
+        "air_conditioning"
+      ],
+      photoUrl: "https://drivy.imgix.net/uploads/originals/e056936b5f361e39b916e9a6dd332b38.jpeg?fit=crop&h=150&w=400"
+    },
+    {
+      id: 2,
+      title: "CC Aveo Toyota Clio 207",
+      energy: "electric",
+      equipments: [
+        "gps",
+        "audio_input"
+      ],
+      photoUrl: "https://drivy.imgix.net/uploads/car/33892/car_photo/55158/voiture_5692fcaffeaf6a35.jpeg?fit=crop&h=150&w=400"
+    },
+    {
+      id: 4,
+      title: "Aveo Clio Jumpy Jumpy Toyota",
+      energy: "electric",
+      equipments: [
+        "audio_input",
+        "air_conditioning"
+      ],
+      photoUrl: "https://drivy.imgix.net/uploads/car/84589/car_photo/138730/voiture_b7db58937a57a04d.jpeg?fit=crop&h=150&w=400"
+    },
+    {
+      id: 4,
+      title: "Megane Fiat Smart Renault Rover",
+      energy: "hybrid",
+      equipments: [
+        "gps"
+      ],
+      photoUrl: "https://drivy.imgix.net/uploads/originals/2bee9fcc9040208a29a74d028e60fe2a.jpeg?fit=crop&h=150&w=400"
+    },
+    {
+      id: 5,
+      title: "Diesel Seat Chevrolet Ibiza Citroen",
+      energy: "diesel",
+      equipments: [ ],
+      photoUrl: "https://drivy.imgix.net/uploads/originals/764069e3574143293b00a104f1c6d512.jpeg?fit=crop&h=150&w=400"
+    },
+    {
+      id: 6,
+      title: "Peugeot Yaris Renault 207 Smart",
+      energy: "electric",
+      equipments: [
+        "gps",
+        "audio_input",
+        "air_conditioning"
+      ],
+      photoUrl: "https://drivy.imgix.net/uploads/originals/d5fd0c9372b2fa5c5f85566487d3c19f.jpeg?fit=crop&h=150&w=400"
+    },
+    {
+      id: 7,
+      title: "Peugeot Yaris Renault 207 Smart",
+      energy: "electric",
+      equipments: [
+        "gps",
+        "audio_input",
+        "air_conditioning"
+      ],
+      photoUrl: "https://drivy.imgix.net/uploads/originals/5de9772cf0718b44c69aa908b3f027ba.png?fit=crop&h=150&w=400"
+    },
+    {
+      id: 8,
+      title: "207 Fiat Diesel Fiat Polo",
+      energy: "diesel",
+      equipments: [
+        "gps",
+        "audio_input",
+        "air_conditioning"
+      ],
+      photoUrl: "https://drivy.imgix.net/uploads/originals/661d56cd3c9be93dafbf7112a3dc29cf.jpg?fit=crop&h=150&w=400"
+    },
+    {
+      id: 9,
+      title: "Nissan Ibiza Diesel Diesel Jumpy",
+      energy: "diesel",
+      equipments: [
+        "air_conditioning"
+      ],
+      photoUrl: "https://drivy.imgix.net/uploads/originals/4bf1e9c6e1d1d1a86858216db2a6bf04.jpg?fit=crop&h=150&w=400"
+    },
+    {
+      id: 10,
+      title: "500 Citroen 500 Renault",
+      energy: "electric",
+      equipments: [ ],
+      photoUrl: "https://drivy.imgix.net/uploads/car/56252/car_photo/89520/voiture_d5e8e642a149b695.gif?fit=crop&h=150&w=400"
+      }
+  ]
+}

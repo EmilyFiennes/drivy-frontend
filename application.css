@@ -1,0 +1,64 @@
+body {
+  font-family: Helvetica, Arial, 'sans-serif';
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.title {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.row {
+  display: block;
+}
+
+.col-lg-2 {
+  width: 16.666666%;
+  float: left;
+
+}
+
+.col-lg-10  {
+  width: 83.333333%;
+  float: left;
+}
+
+.form {
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.form-title {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group + .form-group {
+  margin-top: 15px;
+}
+
+.checkbox {
+  display: block;
+  margin-bottom: 2px;
+}
+
+.blue {
+  color: #0074d9;
+}
+
+.black {
+  color: #111;
+}
+
+.grey-border {
+  border: #ddd 2px solid;
+}
+
+.grey-background {
+  background-color: #f8f8f8;
+  }
