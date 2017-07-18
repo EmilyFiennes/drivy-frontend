@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Helvetica, Arial, 'sans-serif';
 }
@@ -5,26 +9,41 @@ body {
 .wrapper {
   margin: 0 auto;
   max-width: 1200px;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+}
+
+.side-panel {
+  flex: 0 0 auto;
+  width: 260px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.content-panel {
+  flex: 1 1 auto;
+}
+
+.flex-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.flex-grid .col {
+  width: 48%;
 }
 
 .title {
-  margin-top: 40px;
+  margin-top: 10px;
   margin-bottom: 40px;
 }
 
 .row {
   display: block;
-}
-
-.col-lg-2 {
-  width: 16.666666%;
-  float: left;
-
-}
-
-.col-lg-10  {
-  width: 83.333333%;
-  float: left;
 }
 
 .form {
@@ -34,7 +53,7 @@ body {
 
 .form-title {
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   font-weight: bold;
 }
 
@@ -44,7 +63,28 @@ body {
 
 .checkbox {
   display: block;
-  margin-bottom: 2px;
+  margin-bottom: 5px;
+}
+
+.check-equipment {
+  vertical-align: 2px;
+  display: inline-block;
+  padding-right: 3px;
+}
+
+.car-card {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.car-card-image {
+  height: 150px;
+  background-size: cover;
+}
+
+.car-card-title {
+  padding-top: 10px;
 }
 
 .blue {
@@ -61,4 +101,28 @@ body {
 
 .grey-background {
   background-color: #f8f8f8;
+}
+
+.text-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 600px) {
+  .container {
+    display: block;
   }
+
+  .side-panel {
+    width: 100%;
+  }
+
+  .flex-grid {
+    display: block;
+  }
+
+  .flex-grid .col {
+    width: 100%;
+  }
+}

@@ -10,68 +10,53 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
     <link rel="stylesheet" href="application.css">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script>
-
-      $(function() {
-        var cars = [];
-        var url = "cars.json";
-        $.ajax({
-          url: url,
-          dataType: 'JSON',
-          type: 'GET',
-          success: function (data) {
-            var data = JSON.parse(data)
-            console.log(data);
-          }
-        });
-      });
-    </script>
-
+    <script type="text/javascript" src="application.js"></script>
   </head>
   <body>
     <div class="wrapper">
       <h1 class="title blue">Car rental</h1>
       <div class="container">
-        <div class="row">
-          <div class="side-panel col-lg-2">
+          <div class="side-panel">
             <div class="form grey-border grey-background">
               <div class="form-group">
                 <label class="form-title">Energy</label>
-                <select class="form-control">
-                  <option>All</option>
-                  <option>Diesel</option>
-                  <option>Electric</option>
-                  <option>Hybrid</option>
+                <select class="form-control select-energy">
+                  <option value="all">All</option>
+                  <option value="diesel">Diesel</option>
+                  <option value="electric">Electric</option>
+                  <option value="hybrid">Hybrid</option>
                 </select>
               </div>
               <div class="form-group">
                 <label class="form-title">Equipment</label>
                 <div class="checkbox">
                   <label>
-                    <input type="checkbox" value="gps">
+                    <input type="checkbox" value="gps" class="check-equipment">
                       GPS
                   </label>
                 </div>
                 <div class="checkbox">
                   <label>
-                    <input type="checkbox" value="air_conditioning">
+                    <input type="checkbox" value="air_conditioning" class="check-equipment">
                       Air conditioning
                   </label>
                 </div>
                 <div class="checkbox">
                   <label>
-                    <input type="checkbox" value="audio_input">
+                    <input type="checkbox" value="audio_input" class="check-equipment">
                       Audio input
                   </label>
                 </div>
               </div>
               </div>
             </div>
+          <div class="content-panel">
+            <div class="cars-container flex-grid" id="cars-container">
+              Loading...
+            </div>
           </div>
-          <div class="content-panel col-lg-10">SIDE PANEL GOES HERE</div>
         </div>
       </div>
     </div>
-
   </body>
 </html>
