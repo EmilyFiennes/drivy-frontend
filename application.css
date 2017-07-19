@@ -1,3 +1,8 @@
+/* (for my future reference remember this -->
+ https://stackoverflow.com/questions/19940459/box-sizing-border-box
+ and this -->
+ https://www.html5xcss3.com/2013/07/10-basic-tips-to-design-a-responsive-website.html) */
+
 * {
   box-sizing: border-box;
 }
@@ -26,6 +31,7 @@ body {
 .content-panel {
   flex: 1 1 auto;
 }
+
 
 .flex-grid {
   display: flex;
@@ -57,6 +63,8 @@ body {
   font-weight: bold;
 }
 
+/* (for my future reference remember this --> https://developer.mozilla.org/en/docs/Web/CSS/Adjacent_sibling_selectors) */
+
 .form-group + .form-group {
   margin-top: 15px;
 }
@@ -87,11 +95,13 @@ body {
   padding-top: 10px;
 }
 
-.blue {
+/* component elements */
+
+.blue-text {
   color: #0074d9;
 }
 
-.black {
+.black-text {
   color: #111;
 }
 
@@ -103,16 +113,23 @@ body {
   background-color: #f8f8f8;
 }
 
+/* for my future reference remember this --> https://css-tricks.com/snippets/css/truncate-string-with-ellipsis/*/
 .text-ellipsis {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-@media (max-width: 600px) {
+/* For small screens below 800px*/
+
+@media (max-width: 800px) {
   .container {
     display: block;
   }
+
+  .content-panel {
+  flex: 1 0 auto;
+}
 
   .side-panel {
     width: 100%;

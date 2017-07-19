@@ -37,7 +37,7 @@ function onLoadSuccess(carsData) {
 }
 
 function loadCars() {
-  var url = "cars.json";
+  var url = "http://drivy-jobs.s3-eu-west-1.amazonaws.com/test-frontend/cars.json";
   $.ajax({
     url: url,
     dataType: 'json',
